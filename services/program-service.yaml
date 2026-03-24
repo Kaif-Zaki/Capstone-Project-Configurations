@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: program-service
+
+  mvc:
+    problemdetails:
+      enabled: true
+
+  data:
+    mongodb:                        # ← must be under spring.data, not spring
+      host: localhost
+      port: 13500
+      database: eca
+      username: root
+      password: mongodb
+      authentication-database: admin
+
+server:
+  port: 8001
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9001/eureka  # ← missing, this is why it hits 8761
+  instance:
+    prefer-ip-address: true
+
+
+
+
+
+
+

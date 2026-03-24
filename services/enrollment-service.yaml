@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: enrollment-service
+
+  mvc:
+    problemdetails:
+      enabled: true
+
+  datasource:                          # ← directly under spring, NOT under mvc
+    url: jdbc:mysql://localhost:14500/eca?createDatabaseIfNotExist=true
+    username: root
+    password: mysql
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        format_sql: true
+
+server:
+  port: 8002
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9001/eureka
+  instance:
+    prefer-ip-address: true
