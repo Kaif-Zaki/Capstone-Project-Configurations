@@ -1,10 +1,6 @@
 
 
 # config-server/.../configurations/platform/service-registry.yaml
-spring:
-  application:
-    name: service-registry
-
 server:
   port: 9001
 
