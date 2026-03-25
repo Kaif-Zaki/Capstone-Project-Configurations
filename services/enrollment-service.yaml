@@ -1,7 +1,4 @@
 spring:
-  application:
-    name: enrollment-service
-
   mvc:
     problemdetails:
       enabled: true
@@ -22,11 +19,16 @@ spring:
         format_sql: true
 
 server:
-  port: 8002
+  port: 0
 
 eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:9001/eureka
   instance:
-    prefer-ip-address: true
+    instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
+
+
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:9001/eureka
+#  instance:
+#    prefer-ip-address: true
