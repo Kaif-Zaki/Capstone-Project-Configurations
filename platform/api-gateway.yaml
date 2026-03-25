@@ -30,7 +30,7 @@ spring:
                 allowed-methods: "*"
                 allowed-headers: "*"
 server:
-  port: 7200
+  port: 7000
 
 ##spring:
 ##  application:
