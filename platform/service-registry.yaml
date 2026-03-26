@@ -1,10 +1,14 @@
+
+
+# config-server/.../configurations/platform/service-registry.yaml
 server:
   port: 9001
 
-#eureka:
-#  client:
-#    registerWithEureka: false
-#    fetchRegistry: false
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+
 #    serviceUrl:
 #      defaultZone: http://localhost:9001/eureka/   # ← point to itself
 #      server:
