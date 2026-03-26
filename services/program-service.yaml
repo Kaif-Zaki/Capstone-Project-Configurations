@@ -1,6 +1,5 @@
 spring:
-  #  application:
-  #    name: program-service
+
   mvc:
     problemdetails:
       enabled: true
@@ -16,23 +15,8 @@ spring:
 
 
 server:
-  port: 0
+  port: 8001
 
 eureka:
   instance:
     instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
-
-
-#eureka:
-#  client:
-#    service-url:
-#      defaultZone: http://localhost:9001/eureka  # ← missing, this is why it hits 8761
-#  instance:
-#    prefer-ip-address: true
-
-
-
-
-
-
-
