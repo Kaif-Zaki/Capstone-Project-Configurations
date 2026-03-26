@@ -15,48 +15,7 @@ logging:
     org.springframework.web: INFO
     org.hibernate.SQL: DEBUG
 
-#spring:
-#
-#
-#  eureka:
-#    client:
-#      service-url:
-#        defaultZone: http://localhost:9001/eureka
-#
-#  management:
-#      endpoints:
-#        web:
-#          exposure:
-#            include: "*"
-#
-#  logging:
-#      level:
-#          lk.ijse.eca: DEBUG
-#          org.springFramework.web: INFO
-#          org.hibernate.SQL: DEBUG
 
-
-#spring:
-#  application:
-#    name: user-service
-#
-#
-#eureka:
-#  client:
-#    service-url:
-#      defaultZone: http://localhost:9001/eureka
-#
-#management:
-#    endpoints:
-#      web:
-#        exposure:
-#          include: "*"
-#
-#logging:
-#    level:
-#        lk.ijse.eca: DEBUG
-#        org.springFramework.web: INFO
-#        org.hibernate.SQL: DEBUG
 
 
 

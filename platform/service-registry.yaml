@@ -1,6 +1,3 @@
-
-
-# config-server/.../configurations/platform/service-registry.yaml
 server:
   port: 9001
 
@@ -9,18 +6,5 @@ eureka:
     registerWithEureka: false
     fetchRegistry: false
 
-#    serviceUrl:
-#      defaultZone: http://localhost:9001/eureka/   # ← point to itself
-#      server:
-#        enableSelfPreservation: false                  # ← optional but clean for dev
-#      instance:
-#        hostname: localhost
-
-## ← Must be at root, NOT nested under spring:
-#management:
-#  endpoints:
-#    web:
-#      exposure:
-#        include: "*"
 
 
