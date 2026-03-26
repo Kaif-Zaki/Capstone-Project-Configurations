@@ -3,7 +3,7 @@ spring:
     problemdetails:
       enabled: true
 
-  datasource:                          # ← directly under spring, NOT under mvc
+  datasource:
     url: jdbc:mysql://localhost:3306/db-capstone?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true
     username: root
     password: mysql
