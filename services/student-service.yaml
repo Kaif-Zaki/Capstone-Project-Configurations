@@ -4,7 +4,7 @@ spring:
     problemdetails:
       enabled: true
 
-  datasource:               # ← directly under spring, not under mvc
+  datasource:
     url: jdbc:postgresql://localhost:12500/eca
     username: postgres
     password: psql
@@ -26,7 +26,7 @@ servlet:
     max-request-size: 10MB
 
 server:
-  port: 8000
+  port: 0
   forward-headers-strategy: framework
 
 eureka:
