@@ -30,8 +30,6 @@ server:
 
 eureka:
   instance:
-    lease-renewal-interval-in-seconds: 10
-    lease-expiration-duration-in-seconds: 20
     instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
 
 
