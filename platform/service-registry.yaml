@@ -4,6 +4,6 @@ server:
 
 eureka:
   server:
-    enable-self-preservation: false
+    enable-self-preservation: true
     eviction-interval-timer-in-ms: 5000
 
